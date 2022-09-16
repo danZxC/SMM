@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SMM site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&family=Trispace&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="first_screen" id="firstscreen">
+            <header>
+                <div class="logo">
+                    <div id="logo_image"></div>
+                    <div class="logo_text">
+                        <div class="logo_surname">Солнечная</div>
+                        <div class="logo_name" id="surname">Соня</div>
+                    </div>
+                </div>
+                <div class="burger_nav">
+                    <div class="burger" onclick="BurgerUse()">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="navigation">
+                        <li id="navigation"><a href="#Main" class="link">Главная</a></li>
+                        <li id="navigation"><a href="#second_screen"   class="link">Умения</a></li>
+                        <li id="navigation"><a href="#third_screen"   class="link">Мои работы</a></li>
+                        <li id="navigation"><a href="#four_screen"   class="link">О себе</a></li>
+                        <li id="navigation"><a href="#contacts"   class="link">Контакты</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="cta">
+                <div class="cta_text">
+                    <div class="cta_title">
+                        <div class="cta_title_main">Привет! Я Соня</div>
+                        <div class="cta_title_add">Приятно познакомиться</div>
+                    </div>
+                    <div class="cta_text_main">
+                        Я занимаюсь продвижением сайтов на протяжение
+                        10 лет. Мое портфолии насчитывает 200+ работ.
+                        Сотрудничала с Microsoft, Bethesda. Почему
+                        именно я? Опыт работы, общительность, 
+                        соответствие дедлайнам - это все про
+                        меня.
+                    </div>
+                    <div class="cta_button" id="cta_button_button" onclick="ThemeChanger()">
+                        <div class="cta_button_image"></div>
+                        <div class="cta_button_button">Сменить тему</div>
+                    </div>
+                    <div id="cta_button_back" id="cta_button_button_back" onclick="ThemeBack()">
+                        <div class="cta_button_image_back"></div>
+                        <div class="cta_button_button_back">Сменить тему</div>
+                    </div>
+
+                </div>
+                <div id="cta_image"></div>
+            </div>
+        </div>
+
+        <div class="second_screen" id="second_screen">
+            <div class="second_screen_title">Что я могу?</div>
+            <div class="second_screen_cardbox">
+                <div class="second_screen_card">
+                    <img src="cardimage1.png" alt="no" >
+                    <div class="card_title">Поиск материала</div>
+                    <div class="card_description">                        
+                        <div class="card_description_text">
+                            Найду всё, что нобходимо
+                            для продвижения
+                             вашего продукта                        
+                        </div>
+                    </div>
+                </div>
+                <div class="second_screen_card">
+                    <img src="card image 2.png" alt="">
+                    <div class="card_title">План действий</div>
+                    <div class="card_description">        
+                        <div class="card_description_text">
+                            Создам полноценный
+                            план по продвижению
+                            вашего товара                        
+                        </div>
+                    </div>
+                </div><div class="second_screen_card">
+                    <img src="card image 3.png" alt="">
+                    <div class="card_title">Необходимый анализ</div>
+                    <div class="card_description">
+                        <div class="card_description_text">
+                            Все нужные графики, цифры и формулы 
+                            беру на себя!                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third_screen" id="third_screen">
+            <div class="third_screen_title">Мои работы</div>
+            <div class="third_screen_card1">
+                    <img src="cat.png" alt="" class="cat_image" onclick="CatChanger()">
+
+                    <div class="card_main_cat"onclick="CatChanger()">
+                    <div class="trhird_screen_card_title1">Кот</div>
+                    <div class="circles_cat">
+                        <div class="circle">
+                            <div class="circle_number" id="circle">5K</div>
+                            <div class="circle_title">Новых клиентов</div>
+                        </div>
+                        <div class="circle">
+                            <div class="circle_number" id="circle">5</div>
+                            <div class="circle_title">Лет жизни</div>
+                        </div>
+                        <div class="circle">
+                            <div class="circle_number" id="circle">4.0</div>
+                            <div class="circle_title">Рейтинг</div>
+                        </div>
+                    </div>
+
+                    </div>
+            </div>
+
+
+
+            <div class="third_screen_card2">
+                <div class="card_main_dog" onclick="DogChanger()">
+                    <div class="trhird_screen_card_title2">Собака</div>
+                    <div class="circles_dog">
+                        <div class="circle">
+                            <div class="circle_number" id="circle">4K</div>
+                            <div class="circle_title">Новых клиентов</div>
+                        </div>
+                        <div class="circle">
+                            <div class="circle_number"id="circle">10</div>
+                            <div class="circle_title">Лет жизни</div>
+                        </div>
+                        <div class="circle">
+                            <div class="circle_number" id="circle">4.5</div>
+                            <div class="circle_title">Рейтинг</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="dog.png" alt="class" class="dog" onclick="DogChanger()">
+            </div>
+
+
+            
+            <div class="third_screen_card1">
+                <img src="themeshop.png" alt="" class="anime_shop" onclick="AnimeChanger()">
+                <div class="card_main_anime" onclick="AnimeChanger()">
+                    
+                <div class="trhird_screen_card_title3">Тематический магазин</div>
+                <div class="circles_anime">
+                    <div class="circle">
+                        <div class="circle_number" id="circle">90K</div>
+                        <div class="circle_title">Новых клиентов</div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_number" id="circle">6</div>
+                        <div class="circle_title">Лет жизни</div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_number" id="circle">5.0</div>
+                        <div class="circle_title">Рейтинг</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="third_screen_card2">
+            <div class="card_main_shop" onclick="ShopChanger()">
+                <div class="trhird_screen_card_title4">Магазин одежды</div>
+                <div class="circles_shop">
+                    <div class="circle">
+                        <div class="circle_number" id="circle">4М</div>
+                        <div class="circle_title">Новых клиентов</div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_number"id="circle">10</div>
+                        <div class="circle_title">Лет жизни</div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_number" id="circle">4.5</div>
+                        <div class="circle_title">Рейтинг</div>
+                    </div>
+                </div>
+            </div>
+            <img src="shop.png" alt="class" class="shop" onclick="ShopChanger()">
+        </div>
+    </div>
+
+        
+        <div class="four_screen" id="four_screen">
+            <div class="four_screen_title">Немного о себе</div>
+            <div class="four_screen_cardbox">
+                <div class="four_screen_card">
+                    <img src="guitar.png" alt="$" class="img4">
+                    <div class="card_title">Хобби</div>
+                    <div class="four_card_description">                        
+                        <div class="four_card_description_text">
+                            Еще с детства мне нравится рисовать. Также я очень люблю гулять на открытом воздухе, смотреть фильмы, играть в настольные игры.
+                        </div>
+                    </div>
+                </div>
+                <div class="four_screen_card">
+                    <img src="man.png" alt="" class="img5">
+                    <div class="card_title">Умения</div>
+                    <div class="four_card_description">        
+                        <div class="four_card_description_text">
+                            Помимо умений рабочих я
+                            также хоршо умею рисовать,
+                            шить, понимать английский,
+                            работать долго без перерывов.                     
+                        </div>
+                    </div>
+                </div><div class="four_screen_card">
+                    <img src="puzzle.png" alt="" class="img6">
+                    <div class="card_title">Общение</div>
+                    <div class="four_card_description">
+                        <div class="four_card_description_text">
+                            Люблю порядок, так что нужны точные цели и моих задач, а также вся нужная информация по проекту в нужный срок.                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+       <div class="contacts" id="contacts">
+            <div class="soc_media">
+                <div class="soc_media_title">Социальные сети</div>
+                <div class="socmedia_images">
+                    <a href="https://www.instagram.com/pz.zzz/"><img src="instagram.png" alt="" class="insta"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100039681366611"><img src="facevbook.png" alt="" class="facebook"></a> 
+                    <a href=" https://web.telegram.org/k/#941228670"><img src="telega.png" alt="" class="telega"></a>
+                </div>
+            </div>
+            <div class="contacts_information">
+                <span class="inform_title">Личная информация</span>
+                <div class="contacts_text_container">
+                    <div class="thin_text">
+                        <span>Телефон :</span>
+                        <span>Адрес :</span>
+                    </div>
+                    <div class="big_text">
+                        <span>+375(29) 667-21-30</span>
+                        <span>ул.Гагарина, д.33</span>
+                    </div>
+                </div>
+            </div>
+       </div> 
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
